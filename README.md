@@ -12,7 +12,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Samuel Ebisemiju · SQA Engineer">
   <meta name="twitter:description" content="SQA Engineer with 2+ years experience in manual, regression, and exploratory testing. Available for remote roles and freelance engagements.">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23080C14'/><text x='16' y='23' text-anchor='middle' font-family='monospace' font-weight='700' font-size='13' fill='%2300D4A1'>SE</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
@@ -595,7 +595,7 @@
       <li><a href="#skills">skills</a></li>
       <li><a href="#education">education</a></li>
       <li><a href="#contact">contact</a></li>
-      <li><a href="Samuel_Ebisemiju_CV.pdf" download style="color:var(--accent);border:1px solid var(--border-accent);padding:0.2rem 0.65rem;border-radius:2px;">resume ↓</a></li>
+      <li><a href="Samuel_Ebisemiju_CV.pdf" target="_blank" rel="noopener" style="color:var(--accent);border:1px solid var(--border-accent);padding:0.2rem 0.65rem;border-radius:2px;">resume ↗</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -815,9 +815,10 @@
     <div class="projects-grid">
 
       <!-- Daily Timesheet Bot -->
-      <div class="project-card reveal">
+      <a class="project-card reveal" href="https://github.com/Brizzy00/Timesheet-Bot" target="_blank" rel="noopener">
         <div class="project-card-top">
           <span class="project-type bot">Slack Bot</span>
+          <span class="project-arrow">↗</span>
         </div>
         <div class="project-name">Daily Timesheet Bot</div>
         <div class="project-desc">
@@ -831,7 +832,7 @@
           <span class="project-tag">Gemini AI</span>
           <span class="project-tag">Railway</span>
         </div>
-      </div>
+      </a>
 
       <!-- Money Tracker -->
       <div class="project-card reveal reveal-delay-1">
@@ -1047,8 +1048,8 @@
         <a href="https://github.com/Brizzy00" class="contact-link" target="_blank" rel="noopener">
           GitHub &mdash; Brizzy00
         </a>
-        <a href="Samuel_Ebisemiju_CV.pdf" download class="contact-link primary">
-          Download CV ↓
+        <a href="Samuel_Ebisemiju_CV.pdf" target="_blank" rel="noopener" class="contact-link primary">
+          View CV ↗
         </a>
       </div>
     </div>
