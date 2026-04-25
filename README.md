@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Samuel Ebisemiju · SQA Engineer</title>
+  <meta name="description" content="SQA Engineer with 2+ years experience in manual, regression, and exploratory testing. Available for remote roles and freelance engagements.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brizzy00.github.io/">
+  <meta property="og:title" content="Samuel Ebisemiju · SQA Engineer">
+  <meta property="og:description" content="SQA Engineer with 2+ years experience in manual, regression, and exploratory testing. Available for remote roles and freelance engagements.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Samuel Ebisemiju · SQA Engineer">
+  <meta name="twitter:description" content="SQA Engineer with 2+ years experience in manual, regression, and exploratory testing. Available for remote roles and freelance engagements.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23080C14'/><text x='16' y='23' text-anchor='middle' font-family='monospace' font-weight='700' font-size='13' fill='%2300D4A1'>SE</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
@@ -450,7 +459,10 @@
     .contact-inner .section-label {
       justify-content: center;
     }
-    .contact-inner .section-label::after { display: none; }
+    .contact-inner .section-label::before {
+      content: ''; flex: 0 0 50px; height: 1px;
+      background: var(--accent); opacity: 0.35;
+    }
     .contact-tagline {
       font-size: 1.05rem; color: var(--text-muted);
       max-width: 480px; margin: 0 auto 3rem;
@@ -513,6 +525,28 @@
       margin: 0;
     }
 
+    /* ── HAMBURGER ── */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.4rem;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 20px; height: 2px;
+      background: var(--text-muted);
+      border-radius: 1px;
+      transition: all 0.25s cubic-bezier(0.16,1,0.3,1);
+    }
+    .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); background: var(--accent); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); background: var(--accent); }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -527,7 +561,22 @@
       footer { padding: 1.5rem; flex-direction: column; text-align: center; }
     }
     @media (max-width: 520px) {
-      .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+      .nav-links {
+        display: none;
+        position: fixed;
+        top: 57px; left: 0; right: 0; bottom: 0;
+        background: rgba(8,12,20,0.97);
+        backdrop-filter: blur(24px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        z-index: 199;
+        border-top: 1px solid var(--border);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { font-size: 0.88rem; letter-spacing: 0.2em; }
       .hero-stats { gap: 1.5rem; }
       .stat-number { font-size: 2.5rem; }
       .contact-inner { padding: 5rem 1.5rem; }
@@ -546,7 +595,11 @@
       <li><a href="#skills">skills</a></li>
       <li><a href="#education">education</a></li>
       <li><a href="#contact">contact</a></li>
+      <li><a href="Samuel_Ebisemiju_CV.pdf" download style="color:var(--accent);border:1px solid var(--border-accent);padding:0.2rem 0.65rem;border-radius:2px;">resume ↓</a></li>
     </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
   <!-- ── HERO ── -->
@@ -575,25 +628,25 @@
     <div class="hero-stats">
       <div class="stat-item">
         <div>
-          <span class="stat-number" data-count="30">0</span><span class="stat-suffix">%</span>
+          <span class="stat-number" data-count="30">30</span><span class="stat-suffix">%</span>
         </div>
         <span class="stat-label">Test Coverage<br>Improved</span>
       </div>
       <div class="stat-item">
         <div>
-          <span class="stat-number" data-count="20">0</span><span class="stat-suffix">%</span>
+          <span class="stat-number" data-count="20">20</span><span class="stat-suffix">%</span>
         </div>
         <span class="stat-label">Production<br>Defects Reduced</span>
       </div>
       <div class="stat-item">
         <div>
-          <span class="stat-number" data-count="40">0</span><span class="stat-suffix">+</span>
+          <span class="stat-number" data-count="40">40</span><span class="stat-suffix">+</span>
         </div>
         <span class="stat-label">Defects Found<br>Single Engagement</span>
       </div>
       <div class="stat-item">
         <div>
-          <span class="stat-number" data-count="2">0</span><span class="stat-suffix">+</span>
+          <span class="stat-number" data-count="2">2</span><span class="stat-suffix">+</span>
         </div>
         <span class="stat-label">Years QA<br>Experience</span>
       </div>
@@ -613,10 +666,10 @@
           I'm an SQA Engineer with hands-on experience in <strong>manual and regression testing</strong> for web applications. I've built a track record of measurably improving product stability — from owning full regression cycles to identifying 40+ defects (including XSS vulnerabilities) in a single freelance engagement.
         </p>
         <p>
-          Currently expanding into <strong>automation with Playwright and Python</strong>, with solid expertise in Qase, GitHub, and Postman across CI/CD-driven workflows. I collaborate directly with developers, participate in release validation, and treat quality as a shared responsibility.
+          Building automation frameworks with <strong>Playwright and Python</strong>, with solid expertise in Qase, GitHub, and Postman across CI/CD-driven workflows. I collaborate directly with developers, participate in release validation, and treat quality as a shared responsibility.
         </p>
         <p>
-          Passionate about delivering reliable, scalable software in remote, fast-paced environments. I don't just find bugs — I help prevent them.
+          Passionate about delivering reliable, scalable software in remote, fast-paced environments. I don't just find bugs, I help prevent them.
         </p>
       </div>
 
@@ -762,10 +815,9 @@
     <div class="projects-grid">
 
       <!-- Daily Timesheet Bot -->
-      <a class="project-card reveal" href="https://github.com/Brizzy00" target="_blank" rel="noopener">
+      <div class="project-card reveal">
         <div class="project-card-top">
           <span class="project-type bot">Slack Bot</span>
-          <span class="project-arrow">↗</span>
         </div>
         <div class="project-name">Daily Timesheet Bot</div>
         <div class="project-desc">
@@ -779,13 +831,12 @@
           <span class="project-tag">Gemini AI</span>
           <span class="project-tag">Railway</span>
         </div>
-      </a>
+      </div>
 
       <!-- Money Tracker -->
-      <a class="project-card reveal reveal-delay-1" href="https://github.com/Brizzy00" target="_blank" rel="noopener">
+      <div class="project-card reveal reveal-delay-1">
         <div class="project-card-top">
           <span class="project-type web">Web App</span>
-          <span class="project-arrow">↗</span>
         </div>
         <div class="project-name">Money Tracker</div>
         <div class="project-desc">
@@ -797,13 +848,12 @@
           <span class="project-tag">Tailwind CSS</span>
           <span class="project-tag">localStorage</span>
         </div>
-      </a>
+      </div>
 
       <!-- EPUB Reader -->
-      <a class="project-card reveal reveal-delay-2" href="https://github.com/Brizzy00" target="_blank" rel="noopener">
+      <div class="project-card reveal reveal-delay-2">
         <div class="project-card-top">
           <span class="project-type web">Web App</span>
-          <span class="project-arrow">↗</span>
         </div>
         <div class="project-name">EPUB Reader</div>
         <div class="project-desc">
@@ -815,13 +865,12 @@
           <span class="project-tag">JavaScript</span>
           <span class="project-tag">Single File</span>
         </div>
-      </a>
+      </div>
 
       <!-- DiskMap -->
-      <a class="project-card reveal" href="https://github.com/Brizzy00" target="_blank" rel="noopener">
+      <div class="project-card reveal">
         <div class="project-card-top">
           <span class="project-type py">Python CLI</span>
-          <span class="project-arrow">↗</span>
         </div>
         <div class="project-name">DiskMap</div>
         <div class="project-desc">
@@ -832,13 +881,12 @@
           <span class="project-tag">pathlib</span>
           <span class="project-tag">CLI</span>
         </div>
-      </a>
+      </div>
 
       <!-- Dupes -->
-      <a class="project-card reveal reveal-delay-1" href="https://github.com/Brizzy00" target="_blank" rel="noopener">
+      <div class="project-card reveal reveal-delay-1">
         <div class="project-card-top">
           <span class="project-type py">Python CLI</span>
-          <span class="project-arrow">↗</span>
         </div>
         <div class="project-name">Duplicate File Finder</div>
         <div class="project-desc">
@@ -849,13 +897,12 @@
           <span class="project-tag">hashlib</span>
           <span class="project-tag">CLI</span>
         </div>
-      </a>
+      </div>
 
       <!-- Organise -->
-      <a class="project-card reveal reveal-delay-2" href="https://github.com/Brizzy00" target="_blank" rel="noopener">
+      <div class="project-card reveal reveal-delay-2">
         <div class="project-card-top">
           <span class="project-type py">Python CLI</span>
-          <span class="project-arrow">↗</span>
         </div>
         <div class="project-name">File Organiser</div>
         <div class="project-desc">
@@ -867,7 +914,7 @@
           <span class="project-tag">shutil</span>
           <span class="project-tag">CLI</span>
         </div>
-      </a>
+      </div>
 
     </div>
   </section>
@@ -1000,7 +1047,9 @@
         <a href="https://github.com/Brizzy00" class="contact-link" target="_blank" rel="noopener">
           GitHub &mdash; Brizzy00
         </a>
-
+        <a href="Samuel_Ebisemiju_CV.pdf" download class="contact-link primary">
+          Download CV ↓
+        </a>
       </div>
     </div>
   </section>
@@ -1089,6 +1138,24 @@
 
     window.addEventListener('scroll', updateActiveNav, { passive: true });
     updateActiveNav();
+
+    // ── Hamburger toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('open');
+      navToggle.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        navToggle.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
   </script>
 </body>
 </html>
