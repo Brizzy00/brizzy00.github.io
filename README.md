@@ -631,10 +631,7 @@
             <a href="mailto:ebisemijusamuel1@gmail.com">ebisemijusamuel1@gmail.com</a>
           </div>
         </div>
-        <div class="meta-item">
-          <div class="meta-label">Phone</div>
-          <div class="meta-value">+234 903 026 9827</div>
-        </div>
+
         <div class="meta-item">
           <div class="meta-label">LinkedIn</div>
           <div class="meta-value"><a href="https://linkedin.com/in/samuel-ebisemiju" target="_blank" rel="noopener">linkedin.com/in/samuel-ebisemiju</a></div>
@@ -1003,9 +1000,7 @@
         <a href="https://github.com/Brizzy00" class="contact-link" target="_blank" rel="noopener">
           GitHub &mdash; Brizzy00
         </a>
-        <a href="tel:+2349030269827" class="contact-link">
-          +234 903 026 9827
-        </a>
+
       </div>
     </div>
   </section>
